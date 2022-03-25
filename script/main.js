@@ -18,7 +18,7 @@ function loadContent() {
     let html = "";
     res.forEach((e) => {
       if(e.icon != undefined){
-          html += `<a class="button" href='${e.link}'><span class="iconify" data-icon='${e.icon}'data-width=30" data-height="30"></span>  ${e.title}</a></br></br>`;
+          html += `<a class="button" href='${e.link}'><span class="iconify" data-icon='${e.icon}'data-width="100%" data-height="30"></span>  ${e.title}</a></br></br>`;
       }else{
         html += `<a href='${e.link}'>${e.title}</a></br></br>`;
       }
